@@ -54,10 +54,11 @@ elif men == 'Prediction':
     pr = round(pr,2)
     st.image("processing.gif")
     if st.button("Now Predict House price"):
-        st.write(f"House price is ===> {round(pr}%")
+        st.write(f"House price is ===> {pr}%")
     
     
     
+
 
 
 
