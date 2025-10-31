@@ -40,6 +40,7 @@ elif men == 'Data':
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
     if st.button("Check"):
+        st.image("line.jpg")
         st.text(f"Accuracy is ==>{ac}%")
 elif men == 'Prediction':
     st.title("Making House Price Prediction")
@@ -57,6 +58,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
