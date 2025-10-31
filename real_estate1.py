@@ -33,6 +33,7 @@ if men == 'Home':
     st.title("-" * 45)
 elif men == 'Data':
     st.write("Sample Data for House")
+    st.image("check.gif")
     if st.button("!!CLICK!!"):
         st.dataframe(data1)
 
@@ -54,6 +55,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
