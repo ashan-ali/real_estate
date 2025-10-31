@@ -52,10 +52,11 @@ elif men == 'Prediction':
     pr = model.predict([[age, dst, con]])
     st.image("processing.gif")
     if st.button("Now Predict House price"):
-        st.write(f"House price is ===> {pr[0]}")
+        st.write(f"House price is ===> {round(pr[0], 2)}%")
     
     
     
+
 
 
 
