@@ -40,7 +40,7 @@ elif men == 'Data':
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
     if st.button("Check"):
-        st.text(f"Accuracy is ==>{ac}")
+        st.text(f"Accuracy is ==>{ac}%")
 elif men == 'Prediction':
     st.title("Making House Price Prediction")
     st.image("processing.gif")
@@ -53,10 +53,11 @@ elif men == 'Prediction':
     pr = model.predict([[age, dst, con]])
     
     if st.button("Now Predict House price"):
-        st.write(f"House price is ===> {pr[0]}%")
+        st.write(f"House price is ===> {pr[0]}")
     
     
     
+
 
 
 
