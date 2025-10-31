@@ -42,7 +42,7 @@ elif men ==  'Accuracy':
     if st.button("Check"):
         st.text(f"Accuracy is ==>{ac}")
 elif men == 'Prediction':
-    st.image("prediction.jpg")
+    st.image("processing.gif")
     st.header("Select the field for making prediction")
     age = st.number_input("Enter the age of house :=>")
     dst =st.slider("Select distance to the nearest MRT station", min_value = 22.0, max_value=7000.0, value= 50.0)
@@ -50,14 +50,15 @@ elif men == 'Prediction':
     #aprice=st.slider("Select house price of unit area", min_value = 10.0, max_value=120.0 , value= 15.0)
 
     pr = model.predict([[age, dst, con]])
-    pr = pr[0]
-    pr = round(pr,2)
-    st.image("processing.gif")
+    pr1 = pr[0]
+    pr2 = round(pr1,2)
+    
     if st.button("Now Predict House price"):
-        st.write(f"House price is ===> {pr}%")
+        st.write(f"House price is ===> {pr2}%")
     
     
     
+
 
 
 
