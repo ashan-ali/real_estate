@@ -39,7 +39,7 @@ elif men ==  'Accuracy':
         st.text(f"Accuracy is ==>{ac}")
 elif men == 'Prediction':
     st.header("Select the field for making prediction")
-    age = st.slider('Select Age', min_value = 1, max_value = 50, value = 3)
+    age = st.number_input("Enter the age of house :=>")
     dst =st.slider("Select distance to the nearest MRT station", min_value = 22.0, max_value=7000.0, value= 50.0)
     con =st.slider("Select number of convenience stores", min_value = 0, max_value=10, value= 5)
     #aprice=st.slider("Select house price of unit area", min_value = 10.0, max_value=120.0 , value= 15.0)
@@ -50,4 +50,5 @@ elif men == 'Prediction':
     
     
     
+
 
