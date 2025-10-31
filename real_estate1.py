@@ -30,6 +30,7 @@ if men == 'Home':
     st.markdown("\t\t\t\tAshan Ali")
     st.markdown("\t\t\t\tPGT - CS/IP/AI")
     st.markdown("\t\t\t\tNew St. Stephen's Public School, Agra")
+    st.title("-" * 45)
 elif men == 'Data':
     st.write("Sample Data for House")
     if st.button("!!CLICK!!"):
@@ -54,6 +55,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
