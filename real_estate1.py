@@ -50,14 +50,13 @@ elif men == 'Prediction':
     #aprice=st.slider("Select house price of unit area", min_value = 10.0, max_value=120.0 , value= 15.0)
 
     pr = model.predict([[age, dst, con]])
-    pr1 = pr[0]
-    pr2 = round(pr1,2)
     
     if st.button("Now Predict House price"):
-        st.write(f"House price is ===> {pr2}%")
+        st.write(f"House price is ===> {pr[0]}%")
     
     
     
+
 
 
 
