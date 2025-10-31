@@ -22,7 +22,7 @@ t= model.predict(x_test)
 ac = r2_score(y_test, t)
 #-----------------------------------------------------------------------------------------------
 
-men = st.sidebar.selectbox("What is your favorite colour ",  options = ('Home', 'Data', 'Prediction', 'Accuracy'))
+men = st.sidebar.selectbox("Menu ",  options = ('Home', 'Data', 'Prediction', 'Accuracy'))
 if men == 'Home':
     st.title("HOUSE PRICE PREDICTION")
     st.image("house.jpg")
@@ -60,6 +60,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
