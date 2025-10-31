@@ -38,6 +38,7 @@ elif men ==  'Accuracy':
     if st.button("Check"):
         st.text(f"Accuracy is ==>{ac}")
 elif men == 'Prediction':
+    st.image("prediction.jpg")
     st.header("Select the field for making prediction")
     age = st.number_input("Enter the age of house :=>")
     dst =st.slider("Select distance to the nearest MRT station", min_value = 22.0, max_value=7000.0, value= 50.0)
@@ -50,6 +51,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
