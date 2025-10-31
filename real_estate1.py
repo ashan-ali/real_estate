@@ -37,8 +37,7 @@ elif men == 'Data':
         st.dataframe(data1)
 
 elif men ==  'Accuracy':
-    st.header("Making Prediction")
-    st.subheader("Checking of Model Accuracy")
+    st.title("Model Accuracy")
     if st.button("Check"):
         st.text(f"Accuracy is ==>{ac}")
 elif men == 'Prediction':
@@ -55,6 +54,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
