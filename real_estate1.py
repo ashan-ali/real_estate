@@ -25,7 +25,7 @@ ac = r2_score(y_test, t)
 men = st.sidebar.selectbox("What is your favorite colour ",  options = ('Home', 'Data', 'Prediction', 'Accuracy'))
 if men == 'Home':
     st.markdown("welcome to my page")
-    st.markdown("Real State Prediction.........")
+    st.image("house.jpg")
     st.title("-" * 15)
 elif men == 'Data':
     st.write("Sample Data for House")
@@ -50,3 +50,4 @@ elif men == 'Prediction':
     
     
     
+
