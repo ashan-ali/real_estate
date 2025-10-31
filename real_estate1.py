@@ -32,10 +32,10 @@ if men == 'Home':
     st.markdown("\t\t\t\tNew St. Stephen's Public School, Agra")
     st.title("-" * 45)
 elif men == 'Data':
-    st.write("Sample Data for House")
-    st.image("check.gif")
+    st.title("House sample data set ")
     if st.button("!!CLICK!!"):
         st.dataframe(data1)
+        st.image("check.gif")
 
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
@@ -43,6 +43,7 @@ elif men ==  'Accuracy':
     if st.button("Check"):
         st.title(f"Accuracy is ==>{round(ac, 2)}%")
         st.image("line.jpg")
+        
 elif men == 'Prediction':
     st.title("Making House Price Prediction")
     st.image("processing.gif")
@@ -59,6 +60,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
