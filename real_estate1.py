@@ -33,14 +33,15 @@ if men == 'Home':
     st.markdown("\t\t\t\tPGT - CS/IP/AI")
     st.markdown("\t\t\t\tNew St. Stephen's Public School, Agra")
     st.title("-" * 45)
+    
 elif men == 'Data':
     st.title("House sample data set ")
+    im = Image.open("check.gif")
+    im1 = im.resize((200, 200))
+    st.image(im1)
     if st.button("!!CLICK!!"):
-        st.dataframe(data1)
-        im = Image.open("check.gif")
-        im1 = im.resize((200, 200))
-        st.image(im1)
-
+        st.dataframe(data1)  
+        
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
     st.title("-" * 45)
@@ -64,6 +65,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
