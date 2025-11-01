@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import time
+from PIL import Image
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, accuracy_score
@@ -25,7 +25,9 @@ ac = r2_score(y_test, t)
 men = st.sidebar.selectbox("Menu ",  options = ('Home', 'Data', 'Prediction', 'Accuracy'))
 if men == 'Home':
     st.title("HOUSE PRICE PREDICTION")
-    st.image("house.jpg")
+    im = Image.open("house.jpg")
+    im1 = im.resize((400, 300))
+    st.image(im1)
     st.title("-" * 45)
     st.markdown("\t\t\t\tAshan Ali")
     st.markdown("\t\t\t\tPGT - CS/IP/AI")
@@ -60,6 +62,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
