@@ -37,7 +37,9 @@ elif men == 'Data':
     st.title("House sample data set ")
     if st.button("!!CLICK!!"):
         st.dataframe(data1)
-        st.image("check.gif")
+        im = Image.open("check.jpg")
+        im1 = im.resize((200, 200))
+        st.image(im1)
 
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
@@ -62,6 +64,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
