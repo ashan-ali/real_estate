@@ -26,7 +26,7 @@ men = st.sidebar.selectbox("Menu ",  options = ('Home', 'Data', 'Prediction', 'A
 if men == 'Home':
     st.title("HOUSE PRICE PREDICTION")
     im = Image.open("house.jpg")
-    im1 = im.resize((400, 300))
+    im1 = im.resize((600, 300))
     st.image(im1)
     st.title("-" * 45)
     st.markdown("\t\t\t\tAshan Ali")
@@ -62,6 +62,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
