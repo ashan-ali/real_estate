@@ -43,6 +43,7 @@ elif men == 'Data':
         st.dataframe(data1)  
     st.title(" Visualize Data") 
     n = st.selectbox("Select value for x-axis", data1.columns) 
+    st.title(f"value= {n}") 
     x1 = data[n]
     y1 = data1['house price of unit area']
     if st.button("Show"):
@@ -72,6 +73,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
