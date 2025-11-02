@@ -46,7 +46,7 @@ elif men ==  'Accuracy':
     st.title("Model Accuracy")
     st.title("-" * 45)
     if st.button("Check", key = 'red'):
-        st.title(f"Accuracy is ==>{round(ac, 2)}%")
+        st.title(f"Accuracy is ==>{round((ac*100), 2)}%")
         st.image("line.jpg")
         
 elif men == 'Prediction':
@@ -65,6 +65,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
