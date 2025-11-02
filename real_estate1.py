@@ -47,10 +47,13 @@ elif men == 'Visualize Data':
     #x1 = data1[n]
     #y1 = data1['house price of unit area']
     if n == 'Line':
+        st.title("\nLine Chart") 
         st.line_chart(data1) 
     if n == 'Bar':
+        st.title("\nBar Chart") 
         st.bar_chart(data1) 
     if n == 'Scatter':
+        st.title("\nScatter Chart") 
         st.scatter_chart(data1) 
         
 elif men ==  'Accuracy':
@@ -76,6 +79,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
