@@ -41,6 +41,12 @@ elif men == 'Data':
     st.image(im1)
     if st.button("!!CLICK!!"):
         st.dataframe(data1)  
+    st.title(" Visualize Data") 
+    x1 = st.selectbox("Select value for x-axis", data1.colums) 
+    y1 = data1['house price of unit area']
+    if st.button("Show"):
+        st.line_chart(x1,y1) 
+        
         
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
@@ -65,6 +71,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
