@@ -22,7 +22,7 @@ t= model.predict(x_test)
 ac = r2_score(y_test, t)
 #-----------------------------------------------------------------------------------------------
 
-men = st.sidebar.selectbox("Menu ",  options = ('Home', 'Data', 'Prediction', 'Accuracy'))
+men = st.sidebar.selectbox("Menu ",  options = ('Home', 'Data', 'Visualize Data','Prediction', 'Accuracy'))
 if men == 'Home':
     st.title("HOUSE PRICE PREDICTION")
     im = Image.open("house.jpg")
@@ -41,15 +41,13 @@ elif men == 'Data':
     st.image(im1)
     if st.button("!!CLICK!!"):
         st.dataframe(data1)  
+elif men == 'Visualize Data':
     st.title(" Visualize Data") 
     n = st.selectbox("Select value for x-axis", data1.columns) 
-    
     x1 = data1[n]
     y1 = data1['house price of unit area']
-    
     if st.button("Show"):
-        st.line_chart(x1,y1) 
-        
+        st.line_chart(x1,y1)         
         
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
@@ -74,6 +72,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
