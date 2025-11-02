@@ -43,9 +43,14 @@ elif men == 'Data':
         st.dataframe(data1)  
     st.title(" Visualize Data") 
     n = st.selectbox("Select value for x-axis", data1.columns) 
-    st.title(f"value= {n}") 
+    
     x1 = data[n]
     y1 = data1['house price of unit area']
+    st.title(f"value= {x1}") 
+    st.title(f"value= {y1}") 
+
+
+
     if st.button("Show"):
         st.line_chart(x1,y1) 
         
@@ -73,6 +78,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
