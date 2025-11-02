@@ -44,8 +44,8 @@ elif men == 'Data':
     st.title(" Visualize Data") 
     n = st.selectbox("Select value for x-axis", data1.columns) 
     
-    x1 = list(data1[n]) 
-    y1 = list(data1['house price of unit area']) 
+    x1 = data1[n]
+    y1 = data1['house price of unit area']
     
     if st.button("Show"):
         st.line_chart(x1,y1) 
@@ -74,6 +74,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
