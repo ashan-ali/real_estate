@@ -33,6 +33,11 @@ if men == 'Home':
     st.markdown("\t\t\t\tPGT - CS/IP/AI")
     st.markdown("\t\t\t\tNew St. Stephen's Public School, Agra")
     st.title("-" * 45)
+    if st.button("You are welcome"):
+        st.balloons() 
+    
+    
+    
     
 elif men == 'Data':
     st.title("House sample data set ")
@@ -41,6 +46,7 @@ elif men == 'Data':
     st.image(im1)
     if st.button("!!CLICK!!"):
         st.dataframe(data1)  
+        
 elif men == 'Visualize Data':
     st.title(" Visualize Data") 
     n = st.selectbox("Select charts", ('Line', 'Bar', 'Scatter')) 
@@ -49,9 +55,11 @@ elif men == 'Visualize Data':
     if n == 'Line':
         st.title("\nLine Chart") 
         st.line_chart(data1) 
+        
     if n == 'Bar':
         st.title("\nBar Chart") 
         st.bar_chart(data1) 
+        
     if n == 'Scatter':
         st.title("\nScatter Chart") 
         st.scatter_chart(data1) 
@@ -79,6 +87,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
