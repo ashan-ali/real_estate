@@ -50,7 +50,7 @@ elif men == 'Visualize Data':
         st.line_chart(data1) 
     if n == 'Bar':
         st.bar_chart(data1) 
-     if n == 'Scatter':
+    if n == 'Scatter':
         st.scatter_chart(data1) 
         
 elif men ==  'Accuracy':
@@ -76,6 +76,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
