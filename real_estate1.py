@@ -47,7 +47,7 @@ elif men == 'Visualize Data':
     x1 = data1[n]
     y1 = data1['house price of unit area']
     if st.button("Show"):
-        st.line_chart(x1,y1)         
+        st.line_chart(data1)         
         
 elif men ==  'Accuracy':
     st.title("Model Accuracy")
@@ -72,6 +72,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
