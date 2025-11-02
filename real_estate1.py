@@ -43,7 +43,7 @@ elif men == 'Data':
         st.dataframe(data1)  
 elif men == 'Visualize Data':
     st.title(" Visualize Data") 
-    n = st.selectbox("Select charts", ('Line', 'Bar' 'Scatter')) 
+    n = st.selectbox("Select charts", ('Line', 'Bar', 'Scatter')) 
     #x1 = data1[n]
     #y1 = data1['house price of unit area']
     if n == 'Line':
@@ -79,6 +79,7 @@ elif men == 'Prediction':
     
     
     
+
 
 
 
